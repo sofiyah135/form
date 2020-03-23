@@ -1,14 +1,65 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="danger">
     <ion-title>
-      Ionic Blank
+      แบบประเมินความพึงพอใจในการให้บริการ
+      <br>
+    (The Assessment for satisfaction of the service)
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content padding>
+  <!-- <form >
+        <ion-label>Griff</ion-label>
+        <ion-radio slot="start" value="griff"></ion-radio>
+      </form> -->
+  <br>
+  <div><span style="color: red;">*</span><b>1. สถานภาพทั่วไป (Personal Data)</b></div>
+<div class="form">
+ <form >
+   <p><input name="v" type="radio">นักศึกษา (Student)</p>
+   <p><input name="v" type="radio">อาจารย์/บุคลากร (Lecturer/Staff)</p>
+   <p><input name="v" type="radio">ศิษย์เก่า (Alumnus) </p>
+   <p><input name="v" type="radio">บุคลากรภายนอก/ผู้ปกครอง (Outsider/Perent) </p>
+   <p><input name="v" type="radio">อื่นๆ(Other): ............................ </p>     
+   
+  </form>
+</div>
+
+<div><span style="color: red;">*</span><b>2. ความพึงพอใจโดยรวมของการบริการ (Overall satisfactiion of service)</b></div>
+<div class="mark">
+<form>
+  <p><input name="v" type="radio">มากที่สุด</p>
+  <p><input name="v" type="radio">มาก  </p>
+  <p><input name="v" type="radio">ปานกลาง</p>
+  <p><input name="v" type="radio">น้อย</p>
+<p><input name="v" type="radio">น้อยที่สุด</p>
+</form>
+</div>
+
+<div><span style="color: red;">*</span><b>3. ปัญหาการใช้งาน (Sestem usage issues)</b></div>
+<div class="bla">
+<form>  
+  <p>
+    <textarea rows="5" cols="40">
+</textarea>
+</p>
+</form>
+</div>
+
+<div><span style="color: red;">*</span><b>4. ข้อเสนอแนะ</b></div>
+<div class="bla">
+  <form > 
+    <!-- (ngSubmit)="testAbc()" -->
+  <p>
+    <textarea rows="5" cols="40"></textarea>
+    <!-- <ion-input type="text" [(ngModel)]="todo.title" name="title"></ion-input> -->
+
+</p>
+<div align="center">
+<ion-button type="submit" color="medium" size="Default">ส่ง</ion-button>
+</div>
+
+</form>
+</div>
 </ion-content>
